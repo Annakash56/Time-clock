@@ -1,0 +1,14 @@
+import time
+
+print("Simple Clock with Time Tracking\n")
+
+# User inputs the amount of time they want to track (in seconds)
+time_to_track = int(input("How many seconds would you like to track time for? "))
+
+# Time loop to track seconds and print current time
+for i in range(time_to_track):
+    current_time = time.strftime("%H:%M:%S", time.localtime())
+    print(current_time)
+    time.sleep(1)
+
+print("Time tracking complete.")
